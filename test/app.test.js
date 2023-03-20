@@ -1,3 +1,5 @@
+import { describe, it } from 'vitest';
+
 const request = require('supertest');
 
 const app = require('../src/app');
@@ -18,8 +20,12 @@ describe('GET /', () => {
       .get('/')
       .set('Accept', 'application/json')
       .expect('Content-Type', /json/)
-      .expect(200, {
-        message: '🦄🌈✨👋🌎🌍🌏✨🌈🦄'
-      }, done);
+      .expect(
+        200,
+        {
+          message: '🦄🌈✨👋🌎🌍🌏✨🌈🦄',
+        },
+        done
+      );
   });
 });
