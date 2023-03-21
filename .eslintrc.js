@@ -4,6 +4,7 @@ module.exports = {
     jest: true,
   },
   extends: 'airbnb-base',
+  parser: 'babel-eslint',
   rules: {
     'no-underscore-dangle': 0,
     'no-param-reassign': 0,
