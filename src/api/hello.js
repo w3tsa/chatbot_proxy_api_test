@@ -1,6 +1,4 @@
-const { default: axios } = require('axios');
 const express = require('express');
-// const { openAIStream } = require('../utils/openAIStream');
 const { Configuration, OpenAIApi } = require('openai');
 
 const router = express.Router();
